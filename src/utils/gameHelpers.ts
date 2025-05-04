@@ -201,7 +201,7 @@ export const updateGameState = (
       board: clearedBoard,
       activePiece: gameOver ? null : nextActivePiece,
       nextPiece: gameOver ? null : newNextPiece,
-      score: newScore + (linesCleared > 0 ? POINTS[['SINGLE', 'DOUBLE', 'TRIPLE', 'TETRIS'][linesCleared - 1]] * (state.level + 1) : 0),
+      score: newScore + (linesCleared > 0 ? POINTS[['SINGLE', 'DOUBLE', 'TRIPLE', 'TETRIS'][linesCleared - 1] as keyof typeof POINTS] * (state.level + 1) : 0),
       lines: newLines,
       level: newLevel,
       gameOver,

@@ -1,7 +1,7 @@
 // Board dimensions
 export const BOARD_WIDTH = 10;
 export const BOARD_HEIGHT = 20;
-export const CELL_SIZE = 30; // Size in pixels
+export const CELL_SIZE = typeof window !== 'undefined' && window.innerWidth < 768 ? 20 : 30; // Smaller size for mobile
 
 // Game speeds (in milliseconds)
 export const SPEEDS = [
