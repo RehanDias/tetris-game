@@ -56,7 +56,7 @@ const Tetris: React.FC<TetrisProps> = ({ startLevel, onExit }) => {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-gray-900 via-purple-900 to-gray-900 text-white flex flex-col items-center justify-start py-4 px-2">
+        <div className="min-h-screen bg-gradient-to-b from-gray-900 via-purple-900 to-gray-900 text-white flex flex-col items-center justify-start py-4 px-2 md:py-8 md:px-4 pb-36 md:pb-8">
             <div className="w-full max-w-6xl flex items-center justify-between mb-4 px-2">
                 <button
                     onClick={onExit}
